@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "./static/css/main.6342cd21.css",
+    "main.js": "./static/js/main.e7c9e513.js",
+    "static/media/darshan-removebg-preview-fotor-bg-remover-2024030516205.png": "./static/media/darshan-removebg-preview-fotor-bg-remover-2024030516205.e698a2764f4f0a1faf5e.png",
+    "index.html": "./index.html",
+    "main.6342cd21.css.map": "./static/css/main.6342cd21.css.map",
+    "main.e7c9e513.js.map": "./static/js/main.e7c9e513.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6342cd21.css",
+    "static/js/main.e7c9e513.js"
+  ]
+}
