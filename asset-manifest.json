@@ -1,14 +1,17 @@
 {
   "files": {
-    "main.css": "./static/css/main.6342cd21.css",
-    "main.js": "./static/js/main.bbb7cb88.js",
-    "static/media/darshan-removebg-preview-fotor-bg-remover-2024030516205.png": "./static/media/darshan-removebg-preview-fotor-bg-remover-2024030516205.e698a2764f4f0a1faf5e.png",
+    "main.css": "./static/css/main.0a097735.css",
+    "main.js": "./static/js/main.e559588b.js",
+    "static/media/Darshan-Photo.jpeg": "./static/media/Darshan-Photo.15a87c6111b290868d59.jpeg",
+    "static/media/Darshan_Resume.pdf": "./static/media/Darshan_Resume.4f2a10bdf34834e38080.pdf",
+    "static/media/projecttree_logo1.jpg": "./static/media/projecttree_logo1.d65099d37ea855e1fdfb.jpg",
+    "static/media/sanskardeep_logo.jpg": "./static/media/sanskardeep_logo.4b80e0da94da6e7d9549.jpg",
     "index.html": "./index.html",
-    "main.6342cd21.css.map": "./static/css/main.6342cd21.css.map",
-    "main.bbb7cb88.js.map": "./static/js/main.bbb7cb88.js.map"
+    "main.0a097735.css.map": "./static/css/main.0a097735.css.map",
+    "main.e559588b.js.map": "./static/js/main.e559588b.js.map"
   },
   "entrypoints": [
-    "static/css/main.6342cd21.css",
-    "static/js/main.bbb7cb88.js"
+    "static/css/main.0a097735.css",
+    "static/js/main.e559588b.js"
   ]
 }
