@@ -1,41 +1,117 @@
-// My Bio
+import ProjectTreeLogo from "./projecttree_logo1.jpg";
+import CharusatLogo from "./charusat_logo.png";
+import SanskardeepLogo from "./sanskardeep_logo.jpg";
+import DarshanResumePDF from "./Darshan_Resume.pdf";
+
+// Bio Section Data
 export const Bio = {
   name: "Darshan Chavda",
   roles: [
-    "ML enthusiast",
-    "Engineering Student",
+    "Java Backend Developer",
+    "Spring Boot Developer",
+    "REST API Architect",
+    "Machine Learning Enthusiast",
     "Piano Artist",
   ],
-  description: "Always eager to learn 'Hello World' in different ways. I am a Computer Engineering student from CHARUSAT who has knowledge Machine Learning with Python, implementing algorithms like Linear Regression, Logistic Regression, Random Forest, XGBoost, SVM, K-Means Clustering, PCA, and Naive Bayes for regression, classification, and unsupervised learning tasks. I interned at SRKay Consulting Group, as Java Automation Trainee, focusing on Core Java, SQL server Management Studio, Cucumber, Selenium, TestNG, JUnit, Postman API.ProjectTree, focusing on JavaScript and Reactjs technologies. Certain skills include Data Structures and Algorithms (Java) and Web Development (MERN stack). While I may not have all the skills, I'm determined to learn and make up for it. Outside of tech, I am a Piano Artist. You can watch my skills on my YouTube channel. Additionally, I am a good athlete.",
+  description:
+    "Passionate Java Backend Developer with hands-on experience in Java, Spring Boot, Spring Data JPA, Hibernate, REST APIs, Microservices, and MySQL/PostgreSQL. Proficient in developing layered enterprise applications with robust validation, DTO architecture, JPA specifications, pagination, and Spring Security. When away from the keyboard, I am an active Piano Artist and fitness enthusiast.",
+  email: "darshanchavda1505@gmail.com",
+  phone: "+91 70431 74511",
   linkedin: "https://www.linkedin.com/in/darshan-chavda-9097a7245/",
+  github: "https://github.com/darshan1924",
   twitter: "https://twitter.com/chavda_darshu",
-  resume: "https://drive.google.com/drive/folders/1OM2t7n4oG6eP8060MegSxWPAULmpvUdk?usp=sharing",
+  resume: DarshanResumePDF,
   instagram: "https://www.instagram.com/darshan_1505/",
   youtube: "https://youtube.com/@darshanchavda1505?si=BKmspeFneDBzAn0C",
 };
 
-// Skills Section
-export const skills = [{
-    title: "Machine Learning",
-    skills: [{
-        name: "Python",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png",
+// Skills Section Data
+export const skills = [
+  {
+    title: "Languages",
+    skills: [
+      {
+        name: "Java",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
       },
       {
-        name: "scikit-learn",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1280px-Scikit_learn_logo_small.svg.png",
+        name: "Python",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
       },
+      {
+        name: "SQL",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+      },
+    ],
+  },
+  {
+    title: "Backend Development",
+    skills: [
+      {
+        name: "Spring Boot",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+      },
+      {
+        name: "Spring Framework",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+      },
+      {
+        name: "Spring Data JPA",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+      },
+      {
+        name: "Spring Security",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg",
+      },
+      {
+        name: "Hibernate",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg",
+      },
+      {
+        name: "REST APIs",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
+      },
+    ],
+  },
+  {
+    title: "Machine Learning & AI",
+    skills: [
+      {
+        name: "Scikit-Learn",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg",
+      },
+      {
+        name: "TensorFlow",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+      },
+      {
+        name: "Keras",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg",
+      },
+      {
+        name: "CNN",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+      },
+      {
+        name: "Transfer Learning",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+      },
+    ],
+  },
+  {
+    title: "Data Analysis",
+    skills: [
       {
         name: "Pandas",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCpCB6Du8H6Lrm5WIbDcdW59uqoSiL-eeTlw&s",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg",
       },
       {
         name: "NumPy",
-        image: "https://numpy.org/images/logo.svg",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg",
       },
       {
         name: "Matplotlib",
-        image: "https://media.licdn.com/dms/image/v2/D4D12AQFq38cGkv_oHQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1679493396295?e=2147483647&v=beta&t=8hBosvau_9_t0Nt46DZ89TxWOgFZg_z47cMFn8o5cmM",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg",
       },
       {
         name: "Seaborn",
@@ -44,150 +120,145 @@ export const skills = [{
     ],
   },
   {
-    title: "Automation Testing",
-    skills: [{
-        name: "Selenium",
-        image: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Selenium_Logo.png",
+    title: "Databases",
+    skills: [
+      {
+        name: "MySQL",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg",
       },
       {
-        name: "Cucumber",
-        image: "https://www.softwareworld.co/assets/software/logo/cucumber.png",
+        name: "PostgreSQL",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+      },
+    ],
+  },
+  {
+    title: "Tools & Platforms",
+    skills: [
+      {
+        name: "Git",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
       },
       {
-        name: "TestNG",
-        image: "https://sc.filehippo.net/images/t_app-icon-l/p/59b9a40c-1de2-42fb-80eb-c7e16f08fa48/2337485317/testng-icon.jpg",
-      },
-      {
-        name: "JUnit",
-        image: "https://avatars.githubusercontent.com/u/874086?s=200&v=4",
+        name: "GitHub",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
       },
       {
         name: "Postman",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-TB9d5YXwtKhv4NWbpeTBVveYvcxu9gMJng&s",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
       },
       {
-        name: "SQL Server",
-        image: "https://img.icons8.com/color/1200/microsoft-sql-server.jpg",
-      },
-    ],
-  },
-  {
-    title: "Java Technology",
-    skills: [{
-        name: "Java",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSKJCNaNUeMFBN-OQijlZbhGt1vwGwLw0xI_Xqjyd_VA&s",
+        name: "Swagger",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg",
       },
       {
-        name: "JSP",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4YHHVVB9W1sxQs8B0wRpiTKIwEwPd1hkZEg&s",
+        name: "Streamlit",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-plain.svg",
       },
       {
-        name: "Servlet",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9OI-0QJUt_hBcsC701BVY6Umb2miTXP_xXQ&s",
+        name: "FastAPI",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
       },
       {
-        name: "JDBC",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmT5h5HEkiMWGX0RaprJOmld4uujKqIgslVQ&s",
-      },
-      {
-        name: "Spring Framwork",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNpCMAp9YE6HEs3UD54myioCBphLifYFHP2Q&s",
-      },
-    ],
-  },
-  {
-    title: "Frontend",
-    skills: [{
-        name: "HTML",
-        image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
-      },
-      {
-        name: "CSS",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
-      },
-      {
-        name: "JavaScript",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
-      },
-      {
-        name: "React Js",
-        image: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
-      },
-      {
-        name: "Bootstrap",
-        image: "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
-      },
-    ],
-  },
-  {
-    title: "Language Knowledge",
-    skills: [{
-        name: "C",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/695px-C_Programming_Language.svg.png",
-      },
-      {
-        name: "MongoDB",
-        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
-      },
-      {
-        name: "MySQL",
-        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
-      },
-    ],
-  },
-  {
-    title: "Others",
-    skills: [{
-        name: "GitHub",
-        image: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-      },
-      {
-        name: "VS Code",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
+        name: "IntelliJ IDEA",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg",
       },
     ],
   },
 ];
 
-// Experiences Section
-export const experiences = [{
+
+// Experiences Section Data
+export const experiences = [
+  {
     id: 0,
-    img: "https://media.licdn.com/dms/image/D560BAQHiASmDUNFNdw/company-logo_200_200/0/1695364494089/pttech_logo?e=2147483647&v=beta&t=Q5nHYQF9pE7gjxfsfuopUio00a_K_LCdq4jwMSHjTSc",
-    role: "Frontend Engineer Intern",
+    img: ProjectTreeLogo,
+    role: "Java Intern",
     company: "ProjectTree",
-    date: "May 2023 - June 2023",
-    desc: "Studied React and JavaScript. Created projects using React and JavaScript libraries. Gained understanding of industry procedures and client interactions. Learned how to lead and collaborate with a team.",
-    skills: ["JavaScript", "ReactJS", "HTML", "CSS"],
+    date: "May 2026 – July 2026",
+    location: "Remote",
+    desc: "Engineered scalable backend modules for an Enterprise Asset Management System. Designed and developed RESTful APIs using layered architecture, DTOs, request validation, pagination, and sorting. Implemented JPA Specifications for dynamic multi-criteria filtering and integrated Spring Security for robust role-based authorization.",
+    skills: [
+      "Java",
+      "Spring Boot",
+      "Spring Data JPA",
+      "Hibernate",
+      "MySQL",
+      "REST APIs",
+      "Spring Security",
+    ],
+    highlights: [
+      "Layered Enterprise Architecture & DTO mapping",
+      "Dynamic filtering using JPA Specifications",
+      "Role-Based Authorization with Spring Security",
+    ],
   },
   {
     id: 1,
-    img: "https://media.licdn.com/dms/image/C510BAQG1uGpzztHi5w/company-logo_200_200/0/1631420566319/augmetic_logo?e=2147483647&v=beta&t=KTrMq59FPjsMzKld3q7jChWl9CuMggWRnzo5GJa3nkg",
-    role: "Web Developer Intern",
-    company: "Augmetic",
-    date: "May 2024 - June 2024",
-    desc: "Created projects using MERN stack Technology named FlavorEase. Features include placing, managing, and checking out orders, viewing order history, and deleting orders. Gained understanding of industry procedures and client interactions. Learned how to lead and collaborate with a team.",
-    skills: ["MongoDB", "ExpressJS", "ReactJS", "NodeJS", "MERN"],
+    img: "https://media.licdn.com/dms/image/v2/D4D0BAQGsWqM0cpx5ew/company-logo_200_200/company-logo_200_200/0/1696135035612?e=2147483647&v=beta&t=u81J0diwf7-RqeOhqqHaax_qEL3bgLdGTyGAs4iP7vM",
+    role: "Java Automation Trainee",
+    company: "SRKay Consulting Group",
+    date: "Dec 2024 – Mar 2025",
+    location: "Surat, Gujarat",
+    desc: "Automated end-to-end UI and REST API test suites using Java, Selenium WebDriver, TestNG, and Postman. Analyzed API payloads, test execution metrics, and backend logs to identify defects early and accelerate debugging cycles.",
+    skills: [
+      "Core Java",
+      "Selenium WebDriver",
+      "TestNG",
+      "JUnit",
+      "Postman",
+      "SQL Server",
+      "Cucumber",
+    ],
+    highlights: [
+      "Automated UI & REST API test automation suites",
+      "Postman API payload validation & regression",
+      "SQL Server database verification & defect tracking",
+    ],
   },
   {
     id: 2,
-    img: "https://media.licdn.com/dms/image/v2/D4D0BAQGsWqM0cpx5ew/company-logo_200_200/company-logo_200_200/0/1696135035612?e=2147483647&v=beta&t=u81J0diwf7-RqeOhqqHaax_qEL3bgLdGTyGAs4iP7vM",
-    role: "Java Automation Intern",
-    company: "SRKay Consulting Group",
-    date: "December 2024 - March 2025",
-    desc: "Developed automated test suites using Core Java, Selenium WebDriver, and Cucumber framework. Designed and executed API tests with Postman and database validation queries using SQL Server Management Studio. Implemented test frameworks with TestNG and JUnit, achieving comprehensive test coverage for web UI and APIs..",
-    skills: ["Core Java", "Selenium", "Cucumber", "TestNG", "JUnit", "Postman", "SQL Server"],
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS1mv0yMo7XQfU4nOdF10P7kbbWa6gBuoaHwT3INAs2A&s=10",
+    role: "Web Developer Intern",
+    company: "Augmetic",
+    date: "May 2024 – June 2024",
+    location: "Remote",
+    desc: "Built full-stack web applications with MERN stack technology including FlavorEase. Implemented interactive menu browsing, real-time cart handling, and order lifecycle management while participating in agile team sprints.",
+    skills: ["MongoDB", "ExpressJS", "ReactJS", "NodeJS", "REST APIs"],
+    highlights: [
+      "Full-stack MERN food platform architecture",
+      "Interactive cart & order history management",
+      "Agile sprint collaboration and code reviews",
+    ],
+  },
+  {
+    id: 3,
+    img: ProjectTreeLogo,
+    role: "Frontend Engineer Intern",
+    company: "ProjectTree",
+    date: "May 2023 - June 2023",
+    location: "Remote",
+    desc: "Studied React and JavaScript. Created projects using React and JavaScript libraries. Gained understanding of industry procedures and client interactions. Learned how to lead and collaborate with a team.",
+    skills: ["JavaScript", "ReactJS", "HTML", "CSS"],
+    highlights: [
+      "Component-driven UI development with React.js",
+      "Responsive layout design & client interaction",
+      "Collaborative agile workflows and git version control",
+    ],
   },
 ];
 
-// Education Section
-export const education = [{
+// Education Section Data
+export const education = [
+  {
     id: 0,
-    img: "https://secure.gravatar.com/blavatar/fc6bfd97816e5ad165a27436a4bcdbf14bda0b165a4f93da7c59a581e1b5dfd8?s=200&ts=1707226783",
+    img: CharusatLogo,
     school: "Chandubhai S. Patel Institute of Technology (CHARUSAT)",
-    date: "Oct 2021 - May 2025",
+    date: "Oct 2021 – May 2025",
     grade: "8.31 CGPA (Distinction)",
-    desc: "Completed Bachelor's degree in Computer Engineering at Charotar University of Science and Technology, Anand. With a CGPA of 8.31. Completed courses in Machine Learning, Artificial Intelligence, Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, among others.",
-    degree: "Bachelor of Technology - BTech, Computer Engineering",
+    desc: "Bachelor of Technology in Computer Engineering at Charotar University of Science and Technology (CHARUSAT), Anand. Key coursework: Data Structures, Algorithms, Object-Oriented Programming (Java), Machine Learning, Database Management Systems, Operating Systems, and Distributed Systems.",
+    degree: "B.Tech in Computer Engineering",
+    location: "Anand, Gujarat",
   },
   {
     id: 1,
@@ -195,67 +266,153 @@ export const education = [{
     school: "Sarvodaya High School, Ankleshwar",
     date: "May 2021",
     grade: "84%",
-    desc: "Completed Higher Secondary School (class 12) at Sarvodaya High School, Ankleshwar.",
-    degree: "HSC",
+    desc: "Completed Higher Secondary Certificate (Class 12th) with Physics, Chemistry, and Mathematics (PCM).",
+    degree: "Higher Secondary Certificate (HSC - Class XII)",
+    location: "Ankleshwar, Gujarat",
   },
   {
     id: 2,
-    img: "http://sanskardeep.org.in/images/SanskardeepLogoFinal.jpg",
+    img: SanskardeepLogo,
     school: "SMT. P. D. Shroff Sanskardeep Vidhyalaya, Ankleshwar",
     date: "March 2019",
     grade: "82.3%",
-    desc: "Completed Secondary School education (class 10) at SMT. P. D. Shroff Sanskardeep Vidhyalaya, Ankleshwar.",
-    degree: "SSC",
+    desc: "Completed Secondary School Certificate (Class 10th) with distinction.",
+    degree: "Secondary School Certificate (SSC - Class X)",
+    location: "Ankleshwar, Gujarat",
   },
 ];
 
-// Projects Section
-export const projects = [{
+// Certifications Section Data
+export const certifications = [
+  {
     id: 1,
-    title: "Musical Instrument Classifier",
-    description: "A Deep Learning web app using CNN and MobileNetV2 to classify 30 instruments into categories.",
-    image: "https://images.pexels.com/photos/164743/pexels-photo-164743.jpeg",
-    tags: ["TensorFlow", "CNN", "Transfer Learning", "MobileNetV2", "Streamlit"],
-    github: "https://github.com/darshan1924/Music_Instrument_Classification",
+    title: "Java Programming",
+    issuer: "Great Learning",
+    date: "2024",
+    desc: "Comprehensive certification covering OOP, Collections, Multithreading, Exception Handling, and Data Structures in Java.",
+    badge: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
   },
   {
-    "id": 2,
-    "title": "Bangalore House Price Predictor",
-    "description": "Interactive Streamlit app predicting house prices in Bangalore using Linear Regression.",
-    "image": "https://miro.medium.com/v2/resize:fit:1200/0*cDRFtpTiOJFrfzS5.jpg",
-    "tags": ["Python", "Streamlit", "scikit-learn", "Linear Regression", "Data Cleaning"],
-    "github": "https://github.com/darshan1924/House-Price-Prediction"
+    id: 2,
+    title: "Google UX Design Professional Certificate",
+    issuer: "Coursera / Google",
+    date: "2024",
+    desc: "Professional training in empathetic user experience design, wireframing, interactive prototyping, and design systems.",
+    badge: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
   },
   {
     id: 3,
-    title: "Snake Game",
-    description: "Snake Game using HTML, CSS, and JavaScript with simple controls, food collection, and score tracking.",
-    image: "https://images.playground.com/29c8f52fe78b4adeb9f8d431c744cbf9.jpeg",
-    tags: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/darshan150504/Snake-Game",
+    title: "MongoDB MOOC Certification",
+    issuer: "MongoDB University",
+    date: "2024",
+    desc: "Document database architecture, CRUD operations, indexing, aggregation framework, and schema optimization.",
+    badge: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
   },
   {
     id: 4,
-    title: "To-Do List",
-    description: "To-Do List app in React for easy task management with add and delete functionality.",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe857ytYeeWO_CwQQ-lV7AbYVK2TnT-eAyig&s",
-    tags: ["HTML", "CSS", "JavaScript", "ReactJs"],
-    github: "https://github.com/darshan150504/To-Do-List",
+    title: "BAPS Youth Fellowship Programme",
+    issuer: "BAPS (6-Month Residential)",
+    date: "June 2025 – Nov 2025",
+    desc: "Intensive 6-month residential fellowship focusing on selfless humanitarian service, ethical leadership, moral decision-making, and community development.",
+    badge: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZpGwY_rqKOSHspz_sWKAH3059YbMyK91ZwQbnDbVD6A&s=10",
+  },
+];
+
+// Projects Section Data
+export const projects = [
+  {
+    id: 1,
+    title: "Enterprise Asset Management System",
+    description:
+      "Enterprise application for managing the complete asset lifecycle including inventory, allocation, maintenance, transfer, and retirement. Implemented REST APIs with layered architecture, DTO mapping, JPA Specifications dynamic filtering, Spring Security role-based authorization, soft deletes, and Thymeleaf integration.",
+    image:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+    tags: [
+      "Spring Boot",
+      "Spring Security",
+      "Hibernate",
+      "Spring Data JPA",
+      "MySQL",
+      "REST APIs",
+      "Thymeleaf",
+    ],
+    github: "https://github.com/darshan1924/enterprise-asset-management-system",
+    category: "backend",
+  },
+  {
+    id: 2,
+    title: "Bangalore House Price Predictor",
+    description:
+      "Interactive Streamlit app predicting house prices in Bangalore using Linear Regression.",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1200/0*cDRFtpTiOJFrfzS5.jpg",
+    tags: [
+      "Python",
+      "Streamlit",
+      "scikit-learn",
+      "Linear Regression",
+      "Data Cleaning",
+    ],
+    github: "https://github.com/darshan1924/House-Price-Prediction",
+    category: "ml",
+  },
+  {
+    id: 3,
+    title: "AI-Powered House Price Prediction System",
+    description:
+      "Microservice-based application where a Spring Boot backend communicates with a Python FastAPI machine learning service. Built REST APIs for prediction and prediction history using Spring Data JPA and PostgreSQL, with Swagger/OpenAPI documentation.",
+    image:
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80",
+    tags: [
+      "Spring Boot",
+      "FastAPI",
+      "Scikit-Learn",
+      "PostgreSQL",
+      "Python",
+      "Microservices",
+      "Swagger/OpenAPI",
+    ],
+    github: "https://github.com/darshan1924/house-price-ai-system",
+    category: "backend",
+  },
+  {
+    id: 4,
+    title: "Musical Instrument Classifier",
+    description:
+      "A Deep Learning web application utilizing Convolutional Neural Networks (CNN) and MobileNetV2 transfer learning to classify 30 distinct musical instruments with high accuracy.",
+    image:
+      "https://images.pexels.com/photos/164743/pexels-photo-164743.jpeg",
+    tags: [
+      "TensorFlow",
+      "CNN",
+      "Transfer Learning",
+      "MobileNetV2",
+      "Streamlit",
+      "Python",
+    ],
+    github: "https://github.com/darshan1924/Music_Instrument_Classification",
+    category: "ml",
   },
   {
     id: 5,
-    title: "Whatsapp Clone",
-    description: "WhatsApp Group Chat clone using React and Socket.io with real-time messaging, User authentication.",
-    image: "https://img.freepik.com/premium-vector/chat-app-logo-design-template-can-be-used-icon-chat-application-logo_605910-1724.jpg",
-    tags: ["JavaScript", "React.js", "Socket.io"],
-    github: "https://github.com/darshan150504/Whatsapp-Clone",
+    title: "FlavorEase - Online Food Ordering Platform",
+    description:
+      "Modern full-stack food delivery application built with MERN stack. Features include real-time menu browsing, cart management, checkout workflow, order history, and JWT authentication.",
+    image:
+      "https://res.cloudinary.com/djdff8w5b/image/upload/v1720199122/image-for-the-veg-fast-food-web-sign-up-page-background-_kmwwmp.jpg",
+    tags: ["React.js", "Express.js", "Node.js", "MongoDB", "MERN", "JWT"],
+    github: "https://github.com/darshan150504/FlavorEase",
+    category: "web",
   },
   {
     id: 6,
-    title: "FlavorEase",
-    description: "A food web for browsing menus, placing & managing orders, checkout, viewing order history.",
-    image: "https://res.cloudinary.com/djdff8w5b/image/upload/v1720199122/image-for-the-veg-fast-food-web-sign-up-page-background-_kmwwmp.jpg",
-    tags: ["React.js", "Express.js", "Node.js", "MongoDB", "MERN", "bcrypt.js"],
-    github: "https://github.com/darshan150504/FlavorEase",
+    title: "WhatsApp Web Clone",
+    description:
+      "Real-time chat application featuring instant message synchronization via Socket.io, user authentication, active chat rooms, and responsive mobile-friendly UI.",
+    image:
+      "https://img.freepik.com/premium-vector/chat-app-logo-design-template-can-be-used-icon-chat-application-logo_605910-1724.jpg",
+    tags: ["JavaScript", "React.js", "Socket.io", "Node.js", "Express.js"],
+    github: "https://github.com/darshan150504/Whatsapp-Clone",
+    category: "web",
   },
 ];

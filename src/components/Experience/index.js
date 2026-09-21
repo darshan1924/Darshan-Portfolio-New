@@ -1,26 +1,21 @@
 import React from "react";
 import styled from "styled-components";
-import Timeline from "@mui/lab/Timeline";
-import TimelineItem from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineConnector from "@mui/lab/TimelineConnector";
-import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineDot from "@mui/lab/TimelineDot";
 import { experiences } from "../../data/constants";
 import ExperienceCard from "../Cards/ExperienceCard";
+import { motion } from "framer-motion";
 
-const Container = styled.div`
+const Container = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
   z-index: 1;
   align-items: center;
-  margin-top: -150px;
-  padding: 40px 0px 80px 0px;
+  padding: 100px 24px;
+  max-width: 100%;
+
   @media (max-width: 960px) {
-    padding: 0px;
-    margin-top: -30px;
+    padding: 60px 16px;
   }
 `;
 
@@ -29,69 +24,108 @@ const Wrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
-  gap: 12px;
+  gap: 16px;
 `;
 
-const Title = styled.div`
-  font-size: 42px;
-  font-weight: 600;
+const SectionBadge = styled(motion.div)`
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 18px;
+  border-radius: 999px;
+  background: rgba(199, 44, 72, 0.12);
+  border: 1px solid rgba(199, 44, 72, 0.35);
+  color: ${({ theme }) => theme.secondary};
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+`;
+
+const Title = styled(motion.h2)`
+  font-size: 2.75rem;
+  font-weight: 800;
   text-align: center;
-  margin-top: 200px;
   color: ${({ theme }) => theme.text_primary};
+  margin: 0;
+
+  .gradient-text {
+    background: linear-gradient(135deg, #ffffff 0%, #e8d5a3 60%, #c72c48 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   @media (max-width: 768px) {
-    margin-top: 120px;
-    font-size: 32px;
+    font-size: 2rem;
   }
 `;
 
-const Desc = styled.div`
-  font-size: 18px;
-  font-weight: 600px;
+const Desc = styled(motion.p)`
+  font-size: 1.05rem;
   text-align: center;
+  max-width: 680px;
   color: ${({ theme }) => theme.text_secondary};
+  line-height: 1.6;
+  margin-bottom: 30px;
+
   @media (max-width: 768px) {
-    font-size: 16px;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
   }
 `;
 
-const TimeLineSection = styled.div`
+const CardsContainer = styled.div`
   width: 100%;
-  max-width: 1000px;
-  margin-top: 130px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 12px;
+  gap: 28px;
 `;
 
 function Experience() {
   return (
     <Container id="experience">
       <Wrapper>
-        <Title>Experience</Title>
-        <Desc>
-          During internships, I focused on creating web-based projects, enhance
-          my skills using projects.
+        <SectionBadge
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          Track Record & Work History
+        </SectionBadge>
+
+        <Title
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
+          Experience Built to <span className="gradient-text">Drive Impact</span>
+        </Title>
+
+        <Desc
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.15 }}
+        >
+          Hands-on software engineering experience delivering enterprise backend architectures,
+          RESTful microservices, and automated testing frameworks.
         </Desc>
-        <TimeLineSection>
-          <Timeline>
-            {experiences.map((experience, index) => (
-              <TimelineItem key={index}>
-                <TimelineSeparator>
-                  <TimelineDot variant="outlined" color="secondary" />
-                  {index !== experiences.length - 1 && <TimelineConnector />}
-                </TimelineSeparator>
-                <TimelineContent sx={{ py: "12px", px: 2 }}>
-                  <ExperienceCard experience={experience} />
-                </TimelineContent>
-              </TimelineItem>
-            ))}
-          </Timeline>
-        </TimeLineSection>
+
+        <CardsContainer>
+          {experiences.map((experience, index) => (
+            <ExperienceCard
+              key={experience.id || index}
+              experience={experience}
+              index={index}
+            />
+          ))}
+        </CardsContainer>
       </Wrapper>
     </Container>
   );

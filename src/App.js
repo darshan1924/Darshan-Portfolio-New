@@ -4,51 +4,50 @@ import { darkTheme } from "./utils/Themes";
 import Navbar from "./components/navbar";
 import Hero from "./components/HeroSection";
 import Skills from "./components/Skills";
-import Education from "./components/Education";
-import { BrowserRouter as Router } from "react-router-dom";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
-import Footer from "./components/Footer/Footer";
+import Education from "./components/Education";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import { BrowserRouter as Router } from "react-router-dom";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   overflow-x: hidden;
+  position: relative;
 `;
 
-const Wrapper = styled.div`
-  background: linear-gradient(
-      38.73deg,
-      rgba(204, 0, 187, 0.15) 0%,
-      rgba(201, 32, 184, 0) 50%
-    ),
-    linear-gradient(
-      141.27deg,
-      rgba(0, 70, 209, 0) 50%,
-      rgba(0, 70, 209, 0.15) 100%
-    );
+const AmbientGlowWrapper = styled.div`
+  position: relative;
   width: 100%;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
+  background: radial-gradient(
+      circle at 10% 30%,
+      rgba(199, 44, 72, 0.08) 0%,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 90% 70%,
+      rgba(232, 213, 163, 0.06) 0%,
+      transparent 40%
+    );
 `;
 
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <Router>
-        <Navbar />
         <Body>
+          <Navbar />
           <Hero />
-          <Wrapper>
-            <Education />
+          <AmbientGlowWrapper>
             <Skills />
             <Experience />
             <Projects />
-          </Wrapper>
-          <Wrapper>
+            <Education />
             <Contact />
-          </Wrapper>
+          </AmbientGlowWrapper>
           <Footer />
         </Body>
       </Router>
